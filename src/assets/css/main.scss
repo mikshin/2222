@@ -1,0 +1,23 @@
+body{ 
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Literata', serif;
+}
+#app {
+    min-height: 100vh;
+    min-width: 100vw;
+
+}
+main {
+    height: 100%;
+}
+.button-wrapper {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+
+    button+button {
+        margin-left: 24px;
+    }
+}
+

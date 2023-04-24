@@ -1,0 +1,322 @@
+{
+  "configuration": [{
+    "id": 1,
+    "name": "Основные данные",
+    "children": [{
+        "id": 11,
+        "name": "Фамилия",
+        "fieldName": "SURNAME",
+        "fieldType": "text",
+        "required": true
+      },
+      {
+        "id": 12,
+        "name": "Имя",
+        "fieldName": "FIRSTNAME",
+        "fieldType": "text",
+        "required": true
+      },
+      {
+        "id": 13,
+        "name": "Отчество",
+        "fieldName": "PATRONYMIC",
+        "fieldType": "text",
+        "required": false
+      },
+      {
+        "id": 14,
+        "name": "Пол",
+        "fieldName": "SEX",
+        "fieldType": "radio",
+        "radioValue": [
+          "Мужской",
+          "Женский"
+        ],
+        "required": true
+      },
+      {
+        "id": 15,
+        "name": "Дата рождения",
+        "fieldName": "DOB",
+        "fieldType": "date",
+        "class": "input-container--half",
+        "fieldMask": "10.10.2020",
+        "required": true
+      }
+    ]
+  }, {
+    "id": 2,
+    "name": "Паспортные данные и СНИЛС",
+    "children": [{
+        "id": 21,
+        "name": "Тип документа",
+        "fieldName": "DOCUMENT",
+        "fieldType": "select",
+        "selectOptions": [
+          "Паспорт гражданина Российской Федерации",
+          "Заграничный паспорт гражданина Российской Федерации",
+          "Паспорт иностранного гражданина",
+          "Иной документ, удостоверяющий личность"
+        ],
+        "required": true
+      },
+      {
+        "id": 22,
+        "name": "Серия",
+        "fieldName": "Series",
+        "fieldType": "text",
+        "class": "input-container--half",
+        "required": true
+      },
+      {
+        "id": 23,
+        "name": "Номер",
+        "fieldName": "NUMBER",
+        "fieldType": "text",
+        "class": "input-container--half",
+        "required": true
+      },
+      {
+        "id": 24,
+        "name": "Срок действия",
+        "fieldName": "VALIDITY",
+        "fieldType": "date",
+        "class": "input-container--half",
+        "required": true
+      },
+      {
+        "id": 26,
+        "name": "Кем выдан",
+        "fieldName": "ISSUED",
+        "fieldType": "text",
+        "required": true
+      },
+      {
+        "id": 27,
+        "name": "Дата выдачи",
+        "fieldName": "ISSUED_DATE",
+        "fieldType": "date",
+        "class": "input-container--half",
+        "required":  true
+      },
+      {
+        "id": 28,
+        "name": "Код подразделения",
+        "fieldName": "DEPARTMENT_CODE",
+        "fieldType": "text",
+        "class": "input-container--half",
+        "required":  true
+      },
+      {
+        "id": 29,
+        "name": "Гражданство",
+        "fieldName": "CITIZENSHIP",
+        "fieldType": "text",
+        "class": "input-container--half",
+        "required":  true
+      },
+      {
+        "id": 210,
+        "name": "СНИЛС",
+        "fieldName": "SNILS",
+        "fieldType": "text",
+        "fieldMask": "XXX-XXX-XXX XX",
+        "class": "input-container--half input-container--newline",
+        "required":  true
+      }
+    ]
+  }, {
+    "id": 3,
+    "name": "Адрес постоянной регистрации",
+    "children": [{
+        "id": 31,
+        "name": "Регион",
+        "fieldName": "REGION",
+        "fieldType": "text",
+        "required":  true
+      }, {
+        "id": 32,
+        "name": "Населенный пункт",
+        "fieldName": "LOCALITY",
+        "fieldType": "text",
+        "class": "input-container--half",
+        "required":  true
+      }, {
+        "id": 33,
+        "name": "Улица",
+        "fieldName": "STREET",
+        "fieldType": "text",
+        "class": "input-container--half",
+        "required":  true
+      },
+      {
+        "id": 34,
+        "name": "Дом",
+        "fieldName": "HOUSE",
+        "fieldType": "text",
+        "class": "input-container--third",
+        "required":  false
+      }, {
+        "id": 35,
+        "name": "Корпус",
+        "fieldName": "HOUSING",
+        "fieldType": "text",
+        "class": "input-container--third",
+        "required":  false
+      }, {
+        "id": 36,
+        "name": "Квартира",
+        "fieldName": "APARTMENT",
+        "fieldType": "text",
+        "class": "input-container--third",
+        "required":  false
+      }
+    ]
+  }, {
+    "id": 4,
+    "name": "Общежитие",
+    "children": [{
+        "id": 41,
+        "name": "Нуждаюсь в общежитии на время обучения",
+        "fieldName": "HOSTEL",
+        "fieldType": "radio",
+        "radioValue": [
+          "Да",
+          "Нет"
+        ],
+        "required":  false
+      },
+      {
+        "id": 42,
+        "name": "Лицо, с которым можно связаться в экстренных случаях",
+        "info": "(указать ФИО, степень родства, телефон, моб. телефон, эл. почту)",
+        "fieldName": "EMERGENCY",
+        "fieldType": "text",
+        "required":  false
+      }
+    ]
+  }, {
+    "id": 5,
+    "name": "Сведения об образовании",
+    "children": [{
+        "id": 51,
+        "name": "Уровень образования",
+        "fieldName": "EDUCATION_LEVEL",
+        "fieldType": "select",
+        "selectOptions": [
+          "Основное общее (9 классов)",
+          "Среднее общее (11 классов)",
+          "Начальное профессиональное",
+          "Среднее профессиональное",
+          "Высшее"
+        ],
+        "required":  true
+      },
+      {
+        "id": 52,
+        "name": "Наименование образовательного учреждения",
+        "fieldName": "EDUCATION_NAME",
+        "fieldType": "text",
+        "required":  true
+      },
+      {
+        "id": 53,
+        "name": "Регион получения образования",
+        "fieldName": "EDUCATION_REGION",
+        "fieldType": "text",
+        "required":  true
+      },
+      {
+        "id": 54,
+        "name": "Серия документа об образовании",
+        "fieldName": "EDUCATION_SERIES",
+        "info": "(В случае отсутствия серии документа, необходимо поставить прочерк)",
+        "fieldType": "text",
+        "required":  true
+      },
+      {
+        "id": 55,
+        "name": "Номер документа об образовании",
+        "fieldName": "EDUCATION_NUMBER",
+        "fieldType": "text",
+        "required":  true
+      },
+      {
+        "id": 56,
+        "name": "Дата выдачи документа",
+        "fieldName": "EDUCATION_DATE",
+        "fieldType": "text",
+        "class": "input-container--half",
+        "required":  true
+      },
+      {
+        "id": 57,
+        "name": "Средний балл",
+        "fieldName": "EDUCATION_MIDDLE",
+        "fieldType": "text",
+        "class": "input-container--half",
+        "required":  true
+      }
+    ]
+  }, {
+    "id": 6,
+    "name": "Документы, подтверждающие льготы",
+    "children": [{
+      "id": 61,
+      "name": "Прием без вступительных испытаний",
+      "fieldName": "NO_EXAM",
+      "fieldType": "checkbox",
+      "required":  false
+    }, {
+      "id": 62,
+      "name": "Я являюсь инвалидом",
+      "fieldName": "DISABLED",
+      "fieldType": "checkbox",
+      "required":  false
+    }, {
+      "id": 63,
+      "name": "Категория инвалидности",
+      "fieldName": "DISABLED_LEVEL",
+      "fieldType": "select",
+      "selectOptions": [
+        "I группы",
+        "II группы",
+        "III группы (инвалидность с детства)",
+        "Инвалиды вследствие военной травмы",
+        "Инвалиды с детства",
+        "Ребенок-инвалид"
+      ],
+      "required":  true
+    }, {
+      "id": 64,
+      "name": "Я являюсь сиротой",
+      "fieldName": "ORPHAN",
+      "fieldType": "checkbox",
+      "required":  false
+    }, {
+      "id": 65,
+      "name": "Я являюсь ветераном боевых действий",
+      "fieldName": "VETERAN",
+      "fieldType": "checkbox",
+      "required":  false
+    }, {
+      "id": 66,
+      "name": " ",
+      "fieldName": "DISABLED_PROOF",
+      "fieldType": "file",
+      "required":  false
+    }, {
+      "id": 67,
+      "name": "Преимущественное право (в соответствии с частью 7 статьи 71 Федерального закона №273-ФЗ («Об образовании в РФ»))",
+      "fieldName": "ADVANTAGE",
+      "fieldType": "checkbox",
+      "required":  false
+    }, {
+      "id": 68,
+      "name": "Нуждаюсь в создании особых условий при прохождении вступительных испытаний",
+      "fieldName": "SPECIAL",
+      "fieldType": "checkbox",
+      "required":  false
+    }]
+  }]
+}
